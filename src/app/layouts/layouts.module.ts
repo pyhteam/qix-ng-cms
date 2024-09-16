@@ -5,6 +5,7 @@ import { BaseComponent } from './base/base.component';
 import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SideNavbarComponent } from './side-navbar/side-navbar.component';
+import { PrimeNgModule } from '../shared/prime-ng.module';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,6 @@ import { SideNavbarComponent } from './side-navbar/side-navbar.component';
     SideNavbarComponent,
     FooterComponent,
   ],
-  imports: [CommonModule, RouterModule],
+  imports: [CommonModule, RouterModule, PrimeNgModule],
 })
 export class LayoutsModule {}

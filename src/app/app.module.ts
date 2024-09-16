@@ -11,13 +11,18 @@ import { LayoutsModule } from './layouts/layouts.module';
 import { SharedModule } from './shared/shared.module';
 import { AppsComponent } from './pages/apps/apps.component';
 import { SessionsComponent } from './pages/sessions/sessions.component';
+import { PrimeNgModule } from './shared/prime-ng.module';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [AppComponent, AppsComponent, SessionsComponent],
   imports: [
+    CommonModule,
     BrowserModule,
-    AppRoutingModule,
     BrowserAnimationsModule,
+    AppRoutingModule,
+
+    PrimeNgModule,
     LayoutsModule,
     SharedModule,
   ],
